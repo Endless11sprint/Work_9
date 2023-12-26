@@ -11,7 +11,7 @@ int getIntegerInput(const std::wstring& prompt) {
         std::wcin >> value;
 
         if (std::wcin.fail()) {
-            std::wcin.clear();  // Сбрасываем флаг ошибки
+            std::wcin.clear();  
             std::wcin.ignore(std::numeric_limits<std::streamsize>::max(), L'\n');  // Очищаем буфер в
             std::wcout << L"Ошибка ввода. Введите число." << std::endl;
         }
